@@ -1,0 +1,344 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
+
+:root {
+    --navColor: #f7d2bf;
+    --mainColor: #bfd4e7;
+    --groundColor: #0d1653;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Nav Bar */
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.navbar .navbar-brand {
+    color: #0E2954;
+    font-size: 2rem;
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.navbar .navbar-brand:hover {
+    color: #0E2954;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+ul .nav-item .cnt {
+    font-weight: 900;
+}
+
+ul .nav-link {
+    color: #0E2954;
+    font-size: 1.1rem;
+    font-family: 'Montserrat-light', sans-serif;
+    font-weight: 500;
+}
+
+
+
+ul .nav-link:hover {
+    color: coral;
+}
+
+
+/* Title */
+#title {
+    background-color: var(--navColor);
+}
+
+.text1 h1 {
+    color: var(--groundColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.row .text1 {
+    margin-top: 150px;
+    padding-left: 70px;
+
+}
+
+.row .btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #0E2954, #14384f);
+    background-image: -moz-linear-gradient(top, #0E2954, #14384f);
+    background-image: -ms-linear-gradient(top, #0E2954, #14384f);
+    background-image: -o-linear-gradient(top, #0E2954, #14384f);
+    background-image: linear-gradient(to bottom, #0E2954, #14384f);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 30px 30px 0px 10px;
+}
+
+.row .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #1F6E8C, #324b5b);
+    background-image: -moz-linear-gradient(top, #1F6E8C, #324b5b);
+    background-image: -ms-linear-gradient(top, #1F6E8C, #324b5b);
+    background-image: -o-linear-gradient(top, #1F6E8C, #324b5b);
+    background-image: linear-gradient(to bottom, #1F6E8C, #324b5b);
+    text-decoration: none;
+}
+
+.row .title-img {
+    margin: 150px 0 0 150px;
+}
+
+.title-img {
+    max-width: 60%;
+    border-radius: 5%;
+}
+
+
+/* Main section */
+#main-section .text-two {
+    color: var(--groundColor);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+}
+
+/* About */
+#main-section .about-me {
+    padding-bottom: 20px;
+}
+
+p {
+    line-height: 2;
+}
+
+.intro {
+    background-color: #417eb5;
+    border-radius: 10px;
+    color: #EAF6F6;
+    margin: auto;
+    max-width: 100%;
+    padding: 50px 50px;
+    text-align: justify;
+    width: 90% !important;
+
+}
+
+/* Skills */
+.skill-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-box i {
+    color: #0d1653;
+    font-size: 100px;
+}
+
+/*Projects */
+
+.project-box {
+    background-image: url(images/countDownTimer.png);
+    height: 500px;
+    position: relative;
+    background-size: cover;
+}
+
+.menu {
+    color: transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover effect*/
+.project-box:hover .menu {
+    backdrop-filter: blur(8px);
+}
+
+.project-box:hover .menu .timer {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    list-style-type: none;
+}
+
+.project-box:hover .menu .do-list {
+    color: var(--groundColor);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.project-box:hover .menu .data {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    height: 200px;
+    width: 380px;
+    margin-bottom: 40px;
+}
+
+.project-box img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.project-box .text-three {
+    background: #f1f2f6;
+    color: var(--groundColor);
+    font-size: 1.4rem;
+    font-weight: 900;
+    height: 35px;
+    text-align: center;
+    width: 380px;
+}
+
+.project-box .todo {
+    background: var(--groundColor);
+    color: #f1f2f6;
+    font-size: 1.4rem;
+    font-weight: 900;
+    height: 35px;
+    text-align: center;
+    width: 380px;
+}
+
+
+/* Contact */
+
+#main-section hr {
+    border: dotted #0E2954 8px;
+    width: 6%;
+    margin: 100px auto;
+    padding-bottom: 40px;
+}
+
+#main-section .touch {
+    padding: 0;
+}
+
+#contact {
+    margin-bottom: 100px;
+}
+
+#contact h3 {
+    color: var(--groundColor);
+    padding-top: 5%;
+    text-align: center;
+}
+
+.message-me {
+    width: 40%;
+    text-align: justify;
+    margin: 40px auto 60px;
+}
+
+.message-me a {
+    color: #f1f2f6;
+    font-size: 0.85rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#contact .send {
+    background-color: #1F6E8C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    padding: 6px 20px 6px 20px;
+    margin: 40px auto 60px;
+}
+
+
+#contact .send:hover {
+    background-color: #324b5b;
+    text-decoration: none;
+}
+
+/* Footer*/
+.bottom-section {
+    background-color: var(--navColor);
+    text-align: center;
+    padding: 1%;
+}
+
+.copyright {
+    color: #0E2954;
+    font-size: 0.85rem;
+    padding-top: 20px;
+}
+
+.footer-link {
+    float: right;
+    color: var(--groundColor);
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #00539c;
+}
